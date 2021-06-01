@@ -1,9 +1,13 @@
 <template>
   <div id="app">
     <keep-alive><router-view /></keep-alive>
-    <main-tab-bar></main-tab-bar>
+    <!-- <main-tab-bar></main-tab-bar> -->
   </div>
 </template>
+<script>
+  export default {
+  }
+</script>
 
 <script>
 import MainTabBar from "../src/components/content/MainTabBar";
