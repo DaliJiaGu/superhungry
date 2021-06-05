@@ -30,6 +30,7 @@
                   @click="showFood(item1)">
                   <div class="icon">
                     <img width="80" height="80" :src="item1.photo">
+                    {{item1.photo}}
                   </div>
                   <div class="content">
                     <h2 class="name">{{item1.dishes_name}}</h2>
@@ -185,13 +186,17 @@
         this.$refs.foodsScroll.scrollTo(0, -this.tops[index], 300);
       },
       getFood() {
+        console.log(this.goods.length);
         for (let i = 0; i < this.goods.length; i++) {
             let good = {}
+            console.log(this.goods);
             if(typeof this.goods[i][0] != "undefined") {
               good.dishes_cname = this.goods[i][0].dishes_cname
               good.foods = this.goods[i]
               // console.log(good);
+              console.log(good);
               this.meal.push(good)
+              console.log(this.meal);
             }
         }
         // console.log(this.meal);

@@ -57,9 +57,12 @@
        * 网络请求相关的方法
        */
       showAll() {
+        console.log('1111111111111');
         showAll().then(res => {
+          console.log(res);
           for (const n of res) {
             this.goods.push(n)
+            console.log(this.goods);
           }
         })
       },
