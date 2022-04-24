@@ -1,5 +1,5 @@
 # superhungry
-
+一个基于Vue2全家桶开发的点餐系统
 ## Project setup
 ```
 npm install
